@@ -13,13 +13,13 @@ The computation of the dimension consists of two parts as explained in the paper
 
 ## Upper bound 
 
-For the upper bound only the rust code is required. Example usage from the command line, assuming that you are in the repositories base directory:
+For the upper bound only the rust code is required. Example usage from the command line, assuming that you are in the repository's base directory:
 
 ```sh
 cargo run --release -- 12 20 -t 5 -d 1 -D 10
 ```
 
-Computes (upper bounds on the) the dimensions of the linearized kv algebra in weights ("length") 12, 13, 14, 15, and depth from 1 to 10, using up to 5 threads.
+This computes (upper bounds on the) the dimensions of the linearized kv algebra in weights ("length") 12, 13, 14, 15, and depth from 1 to 10, using up to 5 threads.
 The last three arguments are optional.
 
 ## Lower bound
