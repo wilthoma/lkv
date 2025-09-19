@@ -19,7 +19,7 @@ For the upper bound only the rust code is required. Example usage from the comma
 cargo run --release -- 12 20 -t 5 -d 1 -D 10
 ```
 
-This computes (upper bounds on the) the dimensions of the linearized kv algebra in weights ("length") 12, 13, 14, 15, and depth from 1 to 10, using up to 5 threads.
+This computes (upper bounds on the) the dimensions of the linearized kv algebra in weights ("length") 12, 13, ..., 20, and depth from 1 to 10, using up to 5 threads.
 The last three arguments are optional.
 
 ## Lower bound
