@@ -13,18 +13,18 @@ use brown_polys::*;
 fn main() {
     let matches = Command::new("lkv")
         .version("0.1.0")
-        .author("Author Name < ")
+        .author("Florian Naef, Thomas Willwacher")
         .about("Linearized KV dimension computation")   
         .arg(
             Arg::new("start_len")
-                .help("Starting length (inclusive)")
+                .help("Starting length")
                 .required(true)
                 .value_parser(clap::value_parser!(usize))
                 .value_name("START_LEN"),
         )
         .arg(
             Arg::new("stop_len")
-                .help("Stopping length (exclusive)")
+                .help("Stopping length")
                 .required(true)
                 .value_parser(clap::value_parser!(usize))
                 .value_name("STOP_LEN"),
